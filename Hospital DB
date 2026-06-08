@@ -1,0 +1,97 @@
+use hospital;
+
+Create table Patients(Patient_Id int auto_increment primary key,
+Patient_Name varchar(60) NOT NULL,
+Age tinyint,
+Gender varchar(10),
+Date_Of_Birth int,
+Ocupation varchar(40),
+Department_id int,
+Admit_date int,
+Doctor_id int);
+
+-- the query is what i used to get rid of unwanted column.
+			alter table patients
+					drop	Date_Of_Birth;
+					alter table patients
+					drop Admit_date;
+
+				insert into Patients(patient_id, patient_name, age, gender, ocupation, department_id, doctor_Id) value  
+				('11', 'Andy West', '54', 'Male', 'engineer','3', '02');
+
+
+				insert into Patients(patient_id, patient_name, age, gender, ocupation, department_id, doctor_Id) value  
+				('12', 'Joe Edward', '24', 'Male', 'driverr','3', '01');
+
+
+				insert into Patients(patient_id, patient_name, age, gender, ocupation, department_id, doctor_Id) value  
+				('13', 'Sharon Black', '41', 'Female', 'Designer','4', '02');
+
+alter table patients 
+add foreign key (department_id)
+references department(department_id);
+
+alter table patients 
+add foreign key (doctor_id)
+references doctor(doctor_id);
+
+
+
+
+create table Doctor(Doctor_Id int auto_increment primary key,
+Doctor_Name varchar(50) not null,
+Department_Id int);
+		insert into doctor(doctor_id, doctor_name, department_id)
+        value
+        ('01', 'Emily Owen', '2');
+			insert into doctor(doctor_id, doctor_name, department_id)
+			value
+			('06', 'Owen Jack', '5');
+            insert into doctor(doctor_id, doctor_name, department_id)
+        value
+        ('03', 'Uwem Sunny', '4');
+        insert into doctor(doctor_id, doctor_name, department_id)
+        value
+        ('04', 'Irene Bless', '3');
+        insert into doctor(doctor_id, doctor_name, department_id)
+        value
+        ('08', 'Abas Life', '2');
+
+alter table doctor
+add foreign key (department_id)
+references department(department_id);
+
+
+
+
+
+
+create table Department(Department_Id int auto_increment primary key,
+Department_Name varchar(50) not null
+)
+;
+		insert into department(department_id, department_name)
+			values
+				('1', 'Trauma'
+				);
+			insert into department(department_id, department_name)
+				values
+					('2', 'Cardiology');
+		insert into department(department_id, department_name)
+				values
+					( '3', 'Radiology');
+		insert into department(department_id, department_name)
+			values
+				('4', 'Anatomy');
+		insert into department(department_id, department_name)
+			values
+				('5', 'Neuro-surgery');
+		insert into department(department_id, department_name)
+			values
+				('6', 'Emergency surgery'
+				);
+                
+		
+
+
+
