@@ -29,7 +29,7 @@ I'm transitioning into the tech industry with a focus on data analytics. My chem
 
 ## 📊 Projects
 
-*Coming soon...* Share your data analytics projects, case studies, and learning milestones here.
+*Coming soon...*
 
 ## 🎯 Learning Goals
 
@@ -41,7 +41,7 @@ I'm transitioning into the tech industry with a focus on data analytics. My chem
 ## 📫 Connect With Me
 
 - GitHub: [@Emmie001](https://github.com/Emmie001)
-- *Add your other social links here*
+- Twitter/X: [@Web3Emmy](https://x.com/Web3Emmy?s=20)
 
 ---
 
