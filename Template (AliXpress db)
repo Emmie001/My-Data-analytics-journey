@@ -1,0 +1,64 @@
+create database Alixpress;
+
+use alixpress;
+
+create table Customer(Customer_Id int auto_increment primary key,
+	Customer_Name varchar(60) NOT NULL,
+		Location varchar (100),
+			Gender varchar(20), 
+				Product_Id int, 
+					Product_Price int);
+
+
+insert customer(Customer_Id, Customer_Name, Location, Gender,	Product_Id, Product_Price) 
+			value ('001', 'Jimmy Tim', 'Las Vegas', 'Male', '2','12');
+
+				insert customer(Customer_Id, Customer_Name, Location, Gender,	Product_Id, Product_Price) 
+				value ('002', 'Tim Godfrey', 'Mexico', 'Male', '1','10');
+        
+				insert customer(Customer_Id, Customer_Name, Location, Gender,	Product_Id, Product_Price) 
+				value ('003', 'Tasha Kin', 'Singapore', 'Female', '4','1200');
+        
+				insert customer(Customer_Id, Customer_Name, Location, Gender,	Product_Id, Product_Price) 
+				value ('004', 'Lee Chin', 'Japan', 'Male', '3','100');
+        
+				insert customer(Customer_Id, Customer_Name, Location, Gender,	Product_Id, Product_Price) 
+				value ('005', 'Alice Sam', 'South Africa', 'Female', '6','20');
+        
+			insert customer(Customer_Id, Customer_Name, Location, Gender,	Product_Id, Product_Price) 
+			value ('006', 'Esther Brown', 'Nigeria', 'Female', '7','25');
+        
+        
+        
+
+create table Product(Product_Id int auto_increment primary key,
+	Product_Name varchar(60) NOT NULL,
+		Product_Catergory varchar (80),
+			Product_Cost int, 
+				Product_Price int
+					);
+						
+                        	insert Product(Product_Id, Product_Name, Product_Catergory,	Product_Cost,Product_Price) 
+			value ('1', 'Television', 'Electronics', '10', '20');
+							insert Product(Product_Id, Product_Name, Product_Catergory,	Product_Cost,Product_Price) 
+			value ('2', 'Boot', 'Clothing', '8', '12');
+							insert Product(Product_Id, Product_Name, Product_Catergory,	Product_Cost,Product_Price) 
+			value ('3', 'Washing Machine', 'Electronics', '70', '100');
+							insert Product(Product_Id, Product_Name, Product_Catergory,	Product_Cost,Product_Price) 
+			value ('4', 'Samsung Z-FLIP', 'Phone', '1000', '1200');
+							insert Product(Product_Id, Product_Name, Product_Catergory,	Product_Cost,Product_Price) 
+			value ('5', 'iPhone 16', 'Phone', '400', '620');
+							insert Product(Product_Id, Product_Name, Product_Catergory,	Product_Cost,Product_Price) 
+			value ('6', 'Tripod Stand', 'Accessories', '10', '20');
+							insert Product(Product_Id, Product_Name, Product_Catergory,	Product_Cost,Product_Price) 
+			value ('7', 'Charger', 'Accessories', '13', '25');
+                    
+                    
+                    
+create table Sales(Product_Cost int,
+	Product_Price int,
+		Revenue int, 
+			Profit int,
+            Customer_Id int,
+            Quantity_sold int);
+				
