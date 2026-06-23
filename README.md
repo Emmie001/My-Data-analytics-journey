@@ -40,7 +40,7 @@ I'm transitioning into the tech industry with a focus on data analytics. My chem
 
 ## 📫 Connect With Me
 
-- GitHub: [@Emmie001](https://github.com/Emmie001)
+- GitHub: [Emmie-Analyze] (https://github.com/Emmie-Analyze)
 - Twitter/X: [@Web3Emmy](https://x.com/Web3Emmy?s=20)
 
 ---
